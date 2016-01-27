@@ -5,20 +5,20 @@ var expect = chai.expect;
 
 var foo = 2+2;
 describe('Simple Tests',function(){
-	it('Performs basic math', function(){
+	xit('Performs basic math', function(){
 		expect(foo).to.equal(4);
 	});
 
-	it('Confirms setTimeout\'s timer accuracy',function(done){
+	xit('Confirms setTimeout\'s timer accuracy',function(done){
 		var start = new Date(); 
 		setTimeout(function(){
 			var duration = new Date() - start;
-			expect(duration).to.be.closeTo(1000, 10);
+			expect(duration).to.be.closeTo(2500, 10);
 			done();
 		},1000);
 	});
 
-	it('Use spy to confirm that forEach will invoke its function only once for every array element',function(){
+	xit('Use spy to confirm that forEach will invoke its function only once for every array element',function(){
 		var arr = [1,2,3,4,5];
 		function timesTwo(num){
 			return num*2;
